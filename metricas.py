@@ -32,7 +32,7 @@ def calcular_ruta(latitud_origen, longitud_origen, latitud_destino, longitud_des
     directions_result = gmaps.directions(
         (latitud_origen, longitud_origen),
         (latitud_destino, longitud_destino),
-        mode="transit",
+        mode="driving",
         units="metric"
     )
     return directions_result
